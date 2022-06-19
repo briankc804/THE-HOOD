@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head> 
-   {% if title %}
-    <title>Django Hood - {{title}}</title>
-   {% else %}
-     <title>Django Hood</title>
-   {% endif %}
- </head>
-<body> 
-    <h1>Hood About!<h1>
-</body>
-</html>
+{% extends "rubic/base.html"%}
+{% block content %}
+<h1>Hood About!<h1>
+{% endblock content%}
+
+
