@@ -1,24 +1,12 @@
 from django.shortcuts import render
-
+from .models import Post
 # Create your views here.
 
-posts = [
-    {
-    'author':'Brian',
-    'title':'Passionate in Coding',
-    'content':'The best site for coding',
-    'date_posted':'June 19, 2022',
-    },
-    
-    {'author':'Tonia',
-    'title':'Passionate in swiming',
-    'Content':'The best swimmer',
-    'date_posted':'June 19, 2022',}
-]
+
 
 def home(request):
     context = {
-        'posts':posts
+        'posts':Post.objects.all()
     }
     return render(request, 'rubic/home.html', context)
 
