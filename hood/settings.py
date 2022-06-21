@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myhood.apps.MyhoodConfig',
-    'users.apps.UsersConfig',
     'crispy_forms',
 ]
 
